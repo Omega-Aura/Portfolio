@@ -1,25 +1,29 @@
+import { FaDna, FaMicroscope } from "react-icons/fa";
+import { GiMolecule } from "react-icons/gi";
 import "./styles/About.css";
 
 const About = () => {
   return (
     <div className="about-section" id="about">
       <div className="about-me">
-        <h3 className="title">About Me</h3>
+        <div className="about-header">
+          <h3 className="title">About Me</h3>
+          <div className="bio-icons">
+            <FaDna className="bio-icon" />
+            <GiMolecule className="bio-icon" />
+            <FaMicroscope className="bio-icon" />
+          </div>
+        </div>
         <p className="para">
-          I am a passionate Biotechnology pre-final year student at VIT, combining
-          scientific expertise with computational and web development skills. Currently
-          serving as Co-Secretary at Dream Merchants VIT, I have gained valuable
-          industry experience through my internship at Alkem Laboratories Ltd., where
-          I specialized in Quality Control Microbiology and pharmaceutical testing procedures.
+          I'm a Biotechnology student at VIT with a passion for blending science, 
+          technology, and innovation. As Co-Secretary of Dream Merchants VIT and 
+          an intern at Alkem Laboratories, I've gained hands-on experience in 
+          pharmaceutical testing and Quality Control Microbiology.
         </p>
         <p className="para">
-          My academic journey has been enriched by hands-on experience in pharmaceutical
-          microbiology, GLP compliance, and quality control systems. I am particularly
-          passionate about bridging traditional biological research with modern computational
-          approaches and web technologies. With leadership experience in biotechnology events
-          and a strong academic record (CGPA: 8.15), I am committed to contributing to
-          innovation in healthcare and biotechnology through both scientific research and
-          technological solutions.
+          I'm driven to bridge traditional biological research with modern 
+          computational approaches, applying bioinformatics and web technologies 
+          to advance healthcare solutions.
         </p>
       </div>
     </div>

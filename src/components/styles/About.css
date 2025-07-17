@@ -23,6 +23,49 @@
   color: var(--accentColor);
 }
 
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bio-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.bio-icon {
+  font-size: 28px;
+  color: var(--accentColor);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.bio-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: #9f7aea;
+}
+
+.bio-icon:nth-child(1) {
+  animation: float 3s ease-in-out infinite;
+}
+
+.bio-icon:nth-child(2) {
+  animation: float 3s ease-in-out infinite 1s;
+}
+
+.bio-icon:nth-child(3) {
+  animation: float 3s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
 .about-me p {
   font-size: 33px;
   font-weight: 600;
@@ -44,6 +87,12 @@
   .about-section {
     opacity: 1;
   }
+  .about-header {
+    margin-bottom: 25px;
+  }
+  .bio-icon {
+    font-size: 30px;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .about-section {
@@ -61,6 +110,12 @@
   .about-me p {
     font-size: 1.9vw;
     line-height: 2.3vw;
+  }
+  .bio-icons {
+    gap: 20px;
+  }
+  .bio-icon {
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 1950px) {
