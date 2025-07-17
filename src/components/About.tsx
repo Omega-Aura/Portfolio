@@ -15,14 +15,14 @@ const About = () => {
           </div>
         </div>
         <p className="para">
-          I'm a Biotechnology student at VIT with a passion for blending science, 
-          technology, and innovation. As Co-Secretary of Dream Merchants VIT and 
-          an intern at Alkem Laboratories, I've gained hands-on experience in 
+          I'm a Biotechnology student at VIT with a passion for blending science,
+          technology, and innovation. As Co-Secretary of Dream Merchants VIT and
+          an intern at Alkem Laboratories, I've gained hands-on experience in
           pharmaceutical testing and Quality Control Microbiology.
         </p>
         <p className="para">
-          I'm driven to bridge traditional biological research with modern 
-          computational approaches, applying bioinformatics and web technologies 
+          I'm driven to bridge traditional biological research with modern
+          computational approaches, applying bioinformatics and web technologies
           to advance healthcare solutions.
         </p>
       </div>

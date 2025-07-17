@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
+import { FaCode, FaDna } from "react-icons/fa";
 
 import Marquee from "react-fast-marquee";
 
@@ -46,7 +47,10 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          <div className="logo-container">
+            <FaDna className="logo-icon" />
+            <FaCode className="logo-icon-secondary" />
+          </div>
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -62,8 +66,8 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
+            <span> Student | Co-Secretary</span> <span>Biotechnology Enthusiast</span>
+            <span> Student | Co-Secretary</span> <span>Biotechnology Enthusiast</span>
           </Marquee>
         </div>
         <div

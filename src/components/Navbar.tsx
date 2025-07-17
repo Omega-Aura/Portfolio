@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { FaCode, FaDna } from "react-icons/fa";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
@@ -43,7 +44,10 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          <div className="logo-container">
+            <FaDna className="logo-icon" />
+            <FaCode className="logo-icon-secondary" />
+          </div>
         </a>
         <a
           href="mailto:aritradas.kanungo2023@vitstudent.ac.in"
